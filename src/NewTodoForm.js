@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import './NewTodoForm.css';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import IconButton from '@mui/material/IconButton';
+import AddCircleIcon from '@mui/icons-material/AddCircle';
 
 const NewTodoForm = ({addTodo}) => {
     const defaultFormData = {
@@ -20,11 +24,14 @@ const NewTodoForm = ({addTodo}) => {
     };
 
     return (
-        <form className="NewTodoForm">
+        <Box component="form" sx={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
             <label htmlFor="todo">Add Todo:</label>
-            <input type="text" name="todo" id="todo" onChange={handleChange} value={formData.todo} />
-            <button type="submit" onClick={handleSubmit}>+</button>
-        </form>
+            <TextField id="todo" name="todo" size="small" value={formData.todo} onChange={handleChange} sx={{margin: '0px 5px'}}/>
+            {/* <input type="text" name="todo" id="todo" onChange={handleChange} value={formData.todo} /> */}
+            <IconButton type="submit" aria-label="button" onClick={handleSubmit}>
+                <AddCircleIcon name="add" sx={{color: '#118bd5'}}/>
+            </IconButton>
+        </Box>
     );
 };
 

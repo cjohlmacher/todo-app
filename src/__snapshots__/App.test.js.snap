@@ -5,25 +5,68 @@ exports[`should match the snapshot 1`] = `
   <div
     class="App"
   >
-    <ul />
+    <ul
+      class="MuiList-root MuiList-padding css-h4y409-MuiList-root"
+    />
     <form
-      class="NewTodoForm"
+      class="MuiBox-root css-gmuwbf"
     >
       <label
         for="todo"
       >
         Add Todo:
       </label>
-      <input
-        id="todo"
-        name="todo"
-        type="text"
-        value=""
-      />
+      <div
+        class="MuiFormControl-root MuiTextField-root css-ewmcuh-MuiFormControl-root-MuiTextField-root"
+      >
+        <div
+          class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+            id="todo"
+            name="todo"
+            type="text"
+            value=""
+          />
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-nnbavb"
+            >
+              <span
+                class="notranslate"
+              >
+                ​
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
       <button
+        aria-label="button"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+        tabindex="0"
         type="submit"
       >
-        +
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-92r701-MuiSvgIcon-root"
+          data-testid="AddCircleIcon"
+          focusable="false"
+          name="add"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+          />
+        </svg>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
       </button>
     </form>
   </div>

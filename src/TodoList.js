@@ -3,6 +3,8 @@ import {v4 as uuid } from 'uuid';
 import './TodoList.css';
 import NewTodoForm from './NewTodoForm';
 import Todo from './Todo';
+import List from '@mui/material/List';
+
 
 const TodoList = () => {
     const [todos, setTodos] = useState([]);
@@ -22,9 +24,9 @@ const TodoList = () => {
 
     return (
         <>
-            <ul>
+            <List>
                 {todoComponents}
-            </ul>
+            </List>
             <NewTodoForm addTodo={addTodo}/>
         </>
     )

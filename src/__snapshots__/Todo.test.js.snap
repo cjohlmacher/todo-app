@@ -3,14 +3,43 @@
 exports[`should match the snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="Todo"
+    class="MuiBox-root css-361be1"
   >
-    <p>
-      Wash dishes
-    </p>
-    <button>
-      X
-    </button>
+    <li
+      class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
+    >
+      <div
+        class="MuiListItemText-root css-igjnpd-MuiListItemText-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+        >
+          Wash dishes
+        </span>
+      </div>
+      <button
+        aria-label="button"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1d159sf-MuiSvgIcon-root"
+          data-testid="DeleteOutlinedIcon"
+          focusable="false"
+          name="delete"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"
+          />
+        </svg>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </li>
   </div>
 </DocumentFragment>
 `;

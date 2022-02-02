@@ -3,7 +3,7 @@ import TodoList from './TodoList';
 
 const addTodo = (getByLabelText, getByRole) => {
     const todoInput = getByLabelText('Add Todo:');
-    const addButton = getByRole('button', {name: '+'});
+    const addButton = getByRole('button');
     fireEvent.change(todoInput, {target: {name: 'todo', value: 'Wash dishes'}});
     fireEvent.click(addButton);
 };
@@ -31,10 +31,10 @@ it('should match the snapshot after adding todo', () => {
 });
 
 it('should delete a todo on delete click', () => {
-    const { getByLabelText, getByRole, getByText } = render(<TodoList />);
+    const { getByLabelText, getByRole, getByText, getByTestId } = render(<TodoList />);
     addTodo(getByLabelText, getByRole);
     const newTodo = getByText("Wash dishes");
-    const deleteButton = getByText('X');
+    const deleteButton = getByTestId('DeleteOutlinedIcon');
     fireEvent.click(deleteButton);
     expect(newTodo).not.toBeInTheDocument();
 });
